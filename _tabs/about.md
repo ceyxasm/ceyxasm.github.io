@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Hello there! 👋 I'm **Abu Shahid**, a Computer Science and Engineering graduate with a sharp interest in Artificial Intelligence, Physics, Cybersecurity, and Arts.
+Hello there! 👋 I'm **Abu Shahid**, a Computer Science and Engineering graduate with a sharp interest in Artificial Intelligence, Physics, and Arts.
 
 As a kid, I wanted to do everything *except* engineering. Through some not-so-terrible developments, here I am! This is my story - what began in front of a PC in Lucknow is now cruising everywhere on the web.
 
@@ -70,5 +70,5 @@ Reach me out @`abumallikmail@gmail.com`
 
 ---
 
-*See you on the other side of the screen! 🚀*
+*See you on the other side! 🚀*
 
