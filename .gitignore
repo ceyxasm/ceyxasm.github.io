@@ -28,3 +28,5 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+IGNORE_ME
+.DS_Store
