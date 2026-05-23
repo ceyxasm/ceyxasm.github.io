@@ -1,2 +1,7 @@
 - [ ] Init manifesto
 - [ ] Life in 2025
+- [ ] General blogs too
+- [ ] Glass theme???
+- [ ] Update about ---- AUGUST
+   - [ ] Update w all the life blogs
+   - [ ] Update w all the projects
