@@ -8,15 +8,10 @@ Hello there! 👋 I'm **Abu Shahid**, a Computer Science and Engineering graduat
 
 As a kid, I wanted to do everything *except* engineering. Through some not-so-terrible developments, here I am! This is my story - what began in front of a PC in Lucknow is now cruising everywhere on the web.
 
----
-
-## 🚀 What I'm Building
-
-Currently I am busy in migrating and setting up this blog space. Will be notifying about the upcoming works :))
 
 ---
 
-## 💼 What I Do
+## What I Do
 
 * **Machine Learning Engineer @ AttentionTag** *Aug 2024 - Present*
 
@@ -35,7 +30,7 @@ Full resume at the bottom, or just say hi!
 
 ---
 
-## 🎓 Education
+## Education
 
 * **B.Tech in Computer Science and Engineering**  
 *IIT Jodhpur* | *2024* | 8.6 CGPA
@@ -49,7 +44,7 @@ Full resume at the bottom, or just say hi!
 
 ---
 
-## 🎨 When I'm Not Coding
+## When I'm Not Coding
 
 **I <3 reading and learning**
 
@@ -61,7 +56,7 @@ When I'm not buried in books, I'm exploring various interests - some more develo
 
 ---
 
-## 🤝 Let's Connect
+## Let's Connect
 
 I'm always up for interesting conversations about technology, art, physics, or why UTF-8 is the only character encoding that matters.
 Reach me out @`abumallikmail@gmail.com`
