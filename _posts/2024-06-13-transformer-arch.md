@@ -39,7 +39,7 @@ Instead, token 500 just *looks at* token 1 directly.
 
 This solves both problems at once. Long-range dependencies? Handled — every token is one step away from every other token. Parallelisation? Handled — all the attention computations for all tokens happen simultaneously.
 
-The price you pay is quadratic complexity in sequence length — the attention pattern is an $N \times N$ matrix, where $N$ is the number of tokens. We'll deal with that problem in a [later post on FlashAttention](). But for now, the tradeoff is worth it.
+The price you pay is quadratic complexity in sequence length — the attention pattern is an $N \times N$ matrix, where $N$ is the number of tokens. We'll deal with that problem in a [later post on FlashAttention]({% post_url 2024-09-19-flash-attention %}). But for now, the tradeoff is worth it.
 
 ---
 
@@ -89,7 +89,7 @@ _Each row is a position in the sequence, each column is a dimension. Lower dimen
 
 ## Step 3: Attention (The High-Level View)
 
-This is where the magic happens — and it's deep enough that it gets [its own post](). Here, I'll give you the intuition.
+This is where the magic happens — and it's deep enough that it gets [its own post]({% post_url 2024-07-10-attention %}). Here, I'll give you the intuition.
 
 Consider the word "mole" appearing in three different contexts:
 - "American shrew **mole**"
@@ -138,7 +138,7 @@ After attention refines the embeddings based on context, each token passes throu
 
 $$\text{FFN}(x) = W_2 \cdot \text{ReLU}(W_1 x + b_1) + b_2$$
 
-"Position-wise" means it's applied to each token independently — no cross-token interaction here. That's attention's job. The FFN's job is different: this is where the model stores and retrieves **factual knowledge**. We'll dig into this in [a separate post]() on MLPs and how they encode facts.
+"Position-wise" means it's applied to each token independently — no cross-token interaction here. That's attention's job. The FFN's job is different: this is where the model stores and retrieves **factual knowledge**. We'll dig into this in [a separate post]({% post_url 2024-08-01-mlp-facts %}) on MLPs and how they encode facts.
 
 In GPT-3, the inner dimension of the FFN is 4× the embedding dimension — so 49,152 neurons. That's a lot of capacity for storing knowledge, and it accounts for about two-thirds of the model's total parameters.
 
@@ -171,7 +171,7 @@ At inference time, the decoder runs autoregressively:
 3. Append it to the input
 4. Repeat until an end token appears
 
-Each step recomputes attention over the full sequence generated so far. This is expensive — and it's exactly the problem that [KV caching]() solves.
+Each step recomputes attention over the full sequence generated so far. This is expensive — and it's exactly the problem that [KV caching]({% post_url 2024-08-23-kv-cache %}) solves.
 
 ---
 
